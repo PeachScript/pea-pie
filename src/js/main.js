@@ -53,3 +53,8 @@ function getElementsByClassName (className) {
   }
   return results;
 }
+
+/**
+ * 启用 highlight.js
+ */
+hljs.initHighlightingOnLoad();
