@@ -1,0 +1,23 @@
+{
+  "name": "pea-pie",
+  "version": "1.0.0",
+  "description": "A responsive ghost theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeachScript/pea-pie.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "blog"
+  ],
+  "author": "Peach <scdzwyxst@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PeachScript/pea-pie/issues"
+  },
+  "homepage": "https://github.com/PeachScript/pea-pie#readme"
+}

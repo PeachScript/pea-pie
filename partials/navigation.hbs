@@ -1,0 +1,26 @@
+<nav class="side-nav-container">
+  <a class="side-nav-avatar" href="{{@blog.url}}" id="side-avatar">
+    <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+  </a>
+  <p class="side-nav-desc">
+    {{@blog.description}}
+  </p>
+  <ul class="side-nav-menu">
+    {{#foreach navigation}}
+      <li class="{{#if current}} active{{/if}}">
+        <a href="{{url absolute="true"}}">{{label}}</a>
+      </li>
+    {{/foreach}}
+  </ul>
+  <div class="social-nav-container">
+    <a target="_blank" href="javascript:;" title="GitHub">
+      <i class="icon icon-github"></i>
+    </a>
+    <a target="_blank" href="javascript:;" title="新浪微博">
+      <i class="icon icon-weibo"></i>
+    </a>
+    <a href="javascript:;" title="Gmail">
+      <i class="icon icon-gmail"></i>
+    </a>
+  </div>
+</nav>

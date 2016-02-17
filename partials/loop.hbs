@@ -1,0 +1,22 @@
+<div class="post-list">
+  {{#foreach posts}}
+  <article class="{{post_class}}">
+    <header class="post-header">
+      <a href="{{url}}" class="post-cover" style="{{#if image}}background-image: url('{{image}}');{{/if}}">
+        <time class="post-date">
+          {{date format="DD"}}<small>/{{date format="MM"}}</small>
+          <small>{{date format="YYYY"}}</small>
+        </time>
+      </a>
+      <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <a href="{{url}}">{{excerpt characters="200"}}...</a>
+    </section>
+    <footer class="post-meta">
+      {{tags prefix=" 标签："}}
+    </footer>
+  </article>
+  {{/foreach}}
+</div>
+{{pagination}}

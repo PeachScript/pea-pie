@@ -1,0 +1,50 @@
+/**
+ * 阴影
+ * @param  {String]} value [阴影值]
+ */
+.box-shadow(@value){
+  -webkit-box-shadow: @value;
+  -o-box-shadow: @value;
+  -ms-box-shadow: @value;
+  box-shadow: @value;
+}
+/**
+ * 圆角
+ * @param  {Number]} value [圆角值]
+ */
+.border-radius(@value){
+  -webkit-border-radius: @value;
+  -o-border-radius: @value;
+  -ms-border-radius: @value;
+  border-radius: @value;
+}
+/**
+ * 透明度
+ * @param  {Number} value [0-100透明度]
+ */
+.opacity(@value){
+  opacity: @value/100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{value})";
+  filter: ~"alpha(capacity=@{value})";
+}
+/**
+ * 变换
+ * @param  {String} type [变换类型]
+ * @param  {String} value   [变换值]
+ */
+.transform(@type, @value){
+  -webkit-transform: ~"@{type}(@{value})";
+  -o-transform: ~"@{type}(@{value})";
+  -ms-transform: ~"@{type}(@{value})";
+  transform: ~"@{type}(@{value})";
+}
+/**
+ * 过渡动画
+ * @param  {String} value   [过渡值]
+ */
+.transition(@values){
+  -webkit-transition: ~"@{values}";
+  -o-transition: ~"@{values}";
+  -ms-transition: ~"@{values}";
+  transition: ~"@{values}";
+}

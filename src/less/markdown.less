@@ -1,0 +1,93 @@
+.markdown(){
+  @font-color: #555;
+  word-wrap: break-word;
+  h1, h2, h3, h4, h5, h6{
+    color: darken(@basic-green, 10%);
+  }
+  ul li, ol li, p{
+    font-size: 16px;
+    line-height: 30px;
+    color: @font-color;
+  }
+  p{
+    @media(min-width: 768px){
+      text-indent: 32px;
+    }
+  }
+  a{
+    margin: 0 2px;
+    padding: 3px;
+    color: @basic-green;
+    &:hover{
+      color: @deep-green;
+      background-color: lighten(@basic-green, 30%);
+    }
+    &:active{
+      background-color: lighten(@basic-green, 20%);
+    }
+  }
+  img{
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  blockquote{
+    position: relative;
+    margin: 0;
+    padding: 16px 40px;
+    background-color: rgba(226, 221, 191, 0.3);
+    overflow: hidden;
+    &:before{
+      content: '\e804';
+      font-family: 'pea-pie';
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 30px;
+      color: #DCD9C4;
+    }
+  }
+  pre{
+    position: relative;
+    padding: 35px 20px 20px;
+    background-color: rgba(226, 221, 191, 0.3);
+    &:before{
+      content: 'CODE';
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 3px 20px;
+      font-size: 14px;
+      color: #B9B297;
+      border-bottom: 1px solid #E4DDD5;
+      border-right: 1px solid #E4DDD5;
+      background-color: #EAE7D4;
+    }
+    code{
+      color: @font-color;
+      border: 0;
+      background: none;
+    }
+  }
+  hr{
+    padding: 0;
+    border: 0;
+    border-top: medium double #D6D1B0;
+    color: #D6D1B0;
+    text-align: center;
+    &:after{
+      content: "§";
+      display: inline-block;
+      position: relative;
+      top: -12px;
+      font-size: 22px;
+      background-color: #FBFAF3;
+    }
+  }
+  code{
+    padding: 2px 5px;
+    color: #969163;
+    border: 1px solid #DEDBBB;
+    background-color: #F7EFE6;
+  }
+}

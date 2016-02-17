@@ -1,0 +1,56 @@
+.button{
+  position: relative;
+  padding: 8px 10px;
+  color: #999;
+  word-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  .transition('border-color .3s');
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #999;
+    .transition('width @{slow-animation} 1s');
+  }
+  &:before{
+    top: 0;
+    left: 0;
+  }
+  &:after{
+    bottom: 0;
+    right: 0;
+  }
+  &:hover{
+    border-color: #999;
+    &:before, &:after{
+      width: 100%;
+    }
+  }
+  // 绿色按钮样式
+  &.button-green{
+    color: @basic-green;
+    &:before, &:after{
+      background-color: @basic-green;
+    }
+    &:hover{
+      border-color: @basic-green;
+    }
+  }
+  // 禁用样式
+  &.disabled{
+    .opacity(70);
+    cursor: not-allowed;
+    &:hover{
+      border-color: transparent;
+      &:before, &:after{
+        width: 0;
+      }
+    }
+  }
+}

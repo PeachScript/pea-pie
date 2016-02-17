@@ -1,0 +1,12 @@
+{{!< default}}
+<header class="tags-header">
+  <h1 class="page-title">{{tag.name}}</h1>
+  <h2 class="page-description">
+    {{#if tag.description}}
+      {{tag.description}}
+    {{else}}
+      共 {{pagination.total}} 篇文章
+    {{/if}}
+  </h2>
+</header>
+{{> "loop"}}

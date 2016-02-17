@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/pea-pie.css"}}" />
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div class="container basic-container">
+    <div class="basic-content">
+      {{navigation}}
+      {{{body}}}
+    </div>
+  </div>
+  <footer class="site-footer">
+      <section class="copyright">
+        Copyright
+        &copy;
+        {{date format="YYYY"}}
+        &nbsp;
+        Made with
+        <span class="heart">&hearts;</span>
+        by
+        <a target="_blank" href="javascript:;">YOUR NAME</a>
+        &nbsp;
+        Power by
+        <a target="_blank" href="https://ghost.org">Ghost</a>
+        <br/>
+      </section>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+  {{ghost_foot}}
+</body>
+</html>
