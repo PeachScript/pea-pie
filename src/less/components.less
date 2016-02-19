@@ -50,13 +50,8 @@
         font-family: 'pea-pie';
         font-size: 16px;
       }
-      &:before{
-        content: '\e804';
-        margin-right: 5px;
-      }
-      &:after{
-        content: '\e805';
-        margin-left: 5px;
+      .icon-quote-left, .icon-quote-right{
+        font-size: 24px;
       }
     }
     // 侧边菜单
@@ -119,7 +114,7 @@
       a{
         @size: 36px;
         display: inline-block;
-        margin: 10px;
+        margin: 10px 10px 5px;
         width: @size;
         height: @size;
         color: #fff;
@@ -132,11 +127,14 @@
           background-color: rgba(255,255,255,.1);
           border-color: rgba(255,255,255,.7);
         }
-        .icon-gmail{
+        .icon-github, .icon-gmail, .icon-weibo{
           position: relative;
           top: -2px;
-          left: -2px;
-          font-size: 18px;
+        }
+        .icon-dribble{
+          position: relative;
+          top: 1px;
+          font-size: 24px;
         }
       }
     }
