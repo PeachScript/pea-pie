@@ -1,6 +1,6 @@
 {
   "name": "Pea-pie",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A responsive ghost theme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
