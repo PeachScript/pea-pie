@@ -1,9 +1,14 @@
 # Pea-pie
 A responsive ghost theme
 
-See online [demo](http://www.peachis.me/)
+See the online [demo](http://www.peachis.me/)
 
-# Usage
+## Features
+1. beautiful
+2. responsive
+3. support photo gallery
+
+## Usage
 1. [Download the zip file](https://github.com/PeachScript/pea-pie/archive/master.zip) and extract it to the theme path of ghost:
 
 ```
@@ -15,7 +20,15 @@ path/to/ghost/content/themes/
 4. Select `Pea-pie` option and save it;
 5. Open the homepage of Ghost blog, enjoy it!
 
-# MIT license
+## Photo Gallery Usage
+1. Login ghost admin
+2. Create a tag called `photography`
+3. Create a navigation and set url as `/tag/photography`
+4. Create a new post and use the `photography` tag
+5. Upload a header picture for the post and publish it
+6. Open homepage of your blog, and click the new navigation, gallery will present in your eyes!
+
+## MIT license
 The MIT License (MIT)
 
 Copyright (c) 2016 XiaoShengtao
