@@ -1,0 +1,107 @@
+// 摄影标签样式
+.post-list .post.tag-photography{
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0;
+  background-color: #333;
+  .post-meta,
+  .post-excerpt,
+  .post-title,
+  &:after{
+    display: none;
+  }
+  .post-cover{
+    .transition(opacity .3s);
+    &:hover{
+      .opacity(65);
+      .post-date{
+        bottom: 7px;
+        .opacity(100);
+      }
+    }
+    .post-date{
+      top: auto;
+      right: 10px;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      font-family: Arail;
+      font-weight: normal;
+      text-align: right;
+      background-color: transparent;
+      .opacity(0);
+      .box-shadow(none);
+      .transition(~'bottom .3s, opacity .3s');
+      &:before{
+        content: '拍摄时间：';
+      }
+      &, small{
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}
+body.tag-photography{
+  .tags-header{
+    display: none;
+  }
+  // 列表样式
+  .post-list{
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .post{
+      float: left;
+      width: 33.33333%;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      .post-header .post-cover{
+        margin: 0;
+      }
+      @media(max-width: 1200px){
+        width: 50%;
+      }
+      @media (max-width: 768px){
+        width: 33.33333%;
+        .post-header .post-cover{
+          height: 220px;
+        }
+      }
+      @media (max-width: 600px){
+        width: 50%;
+      }
+      @media (max-width: 400px){
+        width: 100%;
+        .post-header .post-cover{
+          height: 250px;
+        }
+      }
+    }
+  }
+  .pagination{
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+  }
+  // 详情样式
+  .post-detail-container{
+    .post-header{
+      .post-title{
+        position: static;
+        padding: 0 30px;
+        font-size: 34px;
+        font-weight: normal;
+        background-color: transparent;
+        .box-shadow(none);
+      }
+      .post-meta{
+        display: none;
+      }
+    }
+  }
+}

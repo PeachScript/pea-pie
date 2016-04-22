@@ -26,10 +26,7 @@
       border: 3px solid #fff;
       overflow: hidden;
       .border-radius(50%);
-      .transition('-webkit-transform @{slow-animation} 1s, 
-                  -o-transform @{slow-animation} 1s, 
-                  -ms-transform @{slow-animation} 1s, 
-                  transform @{slow-animation} 1s');
+      .transition('-webkit-transform @{slow-animation} 1s, -o-transform @{slow-animation} 1s, -ms-transform @{slow-animation} 1s, transform @{slow-animation} 1s');
       &:hover{
         .transform(rotate, 15deg);
       }
@@ -223,11 +220,7 @@
       border: 0 solid #fff;
       border-right-color: @ground-color;
       border-bottom-color: @ground-color;
-      .transition('border-width @{slow-animation} 1s, 
-                  -webkit-box-shadow @{slow-animation} 1s, 
-                  -o-box-shadow @{slow-animation} 1s, 
-                  -ms-box-shadow @{slow-animation} 1s, 
-                  box-shadow @{slow-animation} 1s');
+      .transition('border-width @{slow-animation} 1s, -webkit-box-shadow @{slow-animation} 1s, -o-box-shadow @{slow-animation} 1s, -ms-box-shadow @{slow-animation} 1s, box-shadow @{slow-animation} 1s');
     }
     &:hover{
       background-color: #fafafa;
@@ -244,7 +237,7 @@
         display: block;
         height: 300px;
         background: url('../images/default_cover.svg') no-repeat center center;
-        background-size: 100%;
+        background-size: cover;
         @media(max-width: 768px){
           height: 150px;
         }
